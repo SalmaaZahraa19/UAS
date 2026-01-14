@@ -1,0 +1,108 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #85baf0, #a8e6cf);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    transition: background 0.5s ease;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.2em;
+    text-shadow: 1px 1px 2px #ccc;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    max-width: 600px;
+    width: 90%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+form p {
+    font-weight: 600;
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.05em;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #3498db;
+    cursor: pointer;
+}
+
+label:hover {
+    background-color: #f1f9ff;
+    color: #0b86d8;
+}
+
+button {
+    background: linear-gradient(45deg, #0b86d8, #2980b9);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    margin: 15px 10px 0 0;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #2980b9, #0b86d8);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+#hasil {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#hasil.lulus {
+    color: #ffffff;
+    background-color: #237ccf; 
+}
+
+#hasil.tidak-lulus {
+    color: #ffffff;
+    background-color: #c0392b; 
+}
+
+
+
